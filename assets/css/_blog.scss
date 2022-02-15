@@ -1,0 +1,21 @@
+.blog_detiles {
+  margin: 20px 0;
+  padding:  0 0 20px;
+  border-bottom: 1px solid rgba($min_color, 0.1);
+  .blog_title {
+    font-size: 24px;
+    color: rgba($white_color, 1);
+    font-family: $fr_font;
+    padding: 0 0 20px;
+    span{
+      display: inline-block;
+      padding: 4px 10px;
+      background-color:rgba($sub_color, 0.8) ;
+    }
+  }
+  .prag {
+    padding: 10px 0;
+    color: rgba($white_color, .8);
+    text-align: justify;
+  }
+}

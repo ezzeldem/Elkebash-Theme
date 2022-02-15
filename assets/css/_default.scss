@@ -1,0 +1,118 @@
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: unset;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+body {
+  background-color: rgba($third_color, 1) !important;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba($black_color, 0.3);
+  z-index: 999;
+  display: none;
+}
+.open_class {
+  html[dir="rtl"] & {
+    right: 0px !important;
+  }
+  html[dir="ltr"] & {
+    left: 0px !important;
+  }
+}
+
+.pad_40 {
+  padding: 60px 0;
+}
+
+.section_title {
+  padding: 0 0 20px;
+  .sub_title {
+    font-size: 16px;
+    font-family: $sc_font;
+    font-family: 500;
+    color: rgba($sub_color, 1);
+  }
+  .min_title {
+    font-size: 34px;
+    font-family: $fr_font;
+    font-family: 600;
+    color: rgba($min_color, 1);
+  }
+}
+
+.prag {
+  font-size: 20px;
+  font-family: $sc_font;
+  font-family: 550;
+  color: rgba($min_color, 0.8);
+}
+
+@media (max-width: 992px) {
+  .prag {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 772px) {
+  .order-ms1 {
+    order: -1;
+  }
+
+  .section_title {
+    .sub_title {
+      font-size: 16px;
+    }
+    .min_title {
+      font-size: 24px;
+    }
+  }
+}
+
+.slick-dots {
+  li {
+    width: 20px;
+    height: 2px;
+    @extend%trans-4;
+    button {
+      @extend%trans-4;
+      width: 20px;
+      &:before {
+        @extend%trans-4;
+        width: 20px;
+        height: 2px;
+        content: "";
+        background-color: rgba($white_color, 1);
+      }
+    }
+    &.slick-active {
+      width: 40px;
+      button {
+        width: 40px;
+        &:before {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+
+.overlay_y {
+  overflow-y: hidden;
+}

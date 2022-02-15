@@ -1,0 +1,24 @@
+.intro_page_sum{
+  padding: 80px 0 60px;
+  .intro_page_title{
+    text-align: center ;
+    .min_title{
+      font-size: 60px;
+      font-family: $fr_font;
+      color: rgba($gold_color, 1);
+    }
+  }
+}
+
+
+.about_egy_section{
+  .intro_img{
+    padding : 0 0 40px;
+    text-align: center;
+    img{
+      border-radius: 30px;
+      height: 400px;
+    }
+  }
+
+}

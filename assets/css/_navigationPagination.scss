@@ -1,0 +1,24 @@
+.navigation {
+  margin: 40px 0;
+  justify-content: center;
+  &.pagination {
+    .nav-links {
+      .page-numbers {
+        margin: 0 10px;
+        padding: 6px 14px;
+        background-color: rgba($min_color, 1);
+        color: rgba($third_color, 1);
+        transition: .4s all ease-in-out;
+        &:hover{
+          background-color: rgba($white_color, .5);
+        }
+        &.current {
+          background-color: rgba($gold_color, 1);
+        }
+        &.dots {
+          display: none;
+        }
+      }
+    }
+  }
+}

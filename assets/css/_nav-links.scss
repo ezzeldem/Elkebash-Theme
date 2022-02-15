@@ -1,0 +1,18 @@
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  div {
+    a {
+      margin: 4px;
+      padding: 10px 30px;
+      background-color: rgba($sub_color, 0.8);
+      font-size: 24px;
+      color: rgba($white_color, 1);
+      @extend%trans-4;
+      &:hover {
+        background-color: rgba($black_color, 1);
+      }
+    }
+  }
+}

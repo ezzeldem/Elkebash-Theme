@@ -1,0 +1,234 @@
+.subscrip_section {
+  padding: 60px 0;
+  background-color: rgba($sub_color2, 1);
+  position: relative;
+  z-index: 1;
+  margin: 60px 0 0 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/—Pngtree—egypt\ vector_955105.png");
+    height: 100px;
+    width: 625px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: contain;
+    z-index: -1;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(-7px 2px 13px rgba(0, 0, 0, 0.6));
+  }
+
+  .icone_box {
+    text-align: center;
+    i {
+      font-size: 40px;
+      color: rgba($white_color, 1);
+    }
+  }
+
+  .subscrip_title {
+    text-align: center;
+    margin: 10px 0;
+    font-family: $fr_font;
+    color: rgba($white_color, 1);
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .prag {
+    margin: 0 0 40px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .subscrip_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+      width: 500px;
+      padding: 10px 16px;
+      border: 0;
+      max-width: 100%;
+      background-color: #eee;
+      font-family: $fr_font;
+      html[dir="rtl"] & {
+        border-radius: 0 40px 40px 0;
+      }
+      html[dir="ltr"] & {
+        border-radius: 40px 0 0 40px;
+      }
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+    button {
+      padding: 12.5px 60px;
+      font-size: 14px;
+      font-family: $fr_font;
+      font-size: 14px;
+      border: 0;
+      font-weight: 600;
+      background-color: rgba($sub_color, 1);
+      color: rgba($white_color, 1);
+      @extend%trans-4;
+      border-radius: 40px;
+      html[dir="rtl"] & {
+        margin-right: -34px;
+      }
+      html[dir="ltr"] & {
+        margin-left: -34px;
+      }
+      &:hover {
+        background-color: rgba($gold_color, 1);
+        color: rgba($black_color, 1);
+      }
+    }
+  }
+}
+@media (max-width: 772px) {
+  .subscrip_section {
+    .subscrip_title {
+      font-size: 18px;
+    }
+    .prag {
+      font-size: 14;
+    }
+    .subscrip_form {
+      button {
+        padding: 12.5px 22px;
+      }
+    }
+  }
+}
+
+.footer-section {
+  padding: 60px 0;
+  background-color: rgba($third_color, 1);
+  .footer-title {
+    font-size: 26px;
+    font-weight: 300;
+    color: rgba($white_color, 1);
+    margin: 0 39px 20px;
+    font-family: $fr_font;
+    i {
+      display: none;
+    }
+  }
+  .footer-ul {
+    margin: 0;
+    display: block;
+    &.footer-contact {
+      li {
+        display: block;
+        width: 100%;
+        .data {
+          i {
+            font-size: 13px;
+            padding: 0 3px;
+          }
+          .title {
+            display: none;
+          }
+        }
+      }
+    }
+    li {
+      float: left;
+      width: 50%;
+      list-style: none;
+      margin: 2px 0;
+      font-weight: 600;
+      font-size: 16px;
+      color: rgba($min_color, 1);
+      @extend%trans-4;
+      &:hover {
+        color: rgba($white_color, 1);
+      }
+      a {
+        font-family: $sc_font;
+        color: rgba($min_color, 1);
+        @extend%trans-4;
+        &:hover {
+          color: rgba($gold_color, 1);
+        }
+      }
+    }
+  }
+}
+
+.copy-footer {
+  padding: 20px 0;
+  background-color: rgba($black_color, 1);
+  .copy-link {
+    color: rgba($min_color, 1);
+    margin: 0 39px 0;
+    @extend%trans-4;
+    &:hover {
+      color: rgba($white_color, 1);
+    }
+  }
+  .sochile-box {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      li {
+        margin: 0 10px;
+        filter: grayscale(4);
+        @extend%trans-4;
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-section {
+    .footer-title {
+      margin: 36px 39px 5px;
+    }
+  }
+}
+@media (max-width: 772px) {
+  .footer-section {
+    .footer-title {
+      margin: 10px 0;
+      padding: 3px 39px;
+      background-color: rgba($white_color, 0.1);
+      font-size: 20px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      i {
+        display: block;
+      }
+    }
+    .footer-ul {
+      display: none;
+      li {
+        width: 100%;
+        float: unset;
+      }
+    }
+  }
+
+  .copy-footer {
+    text-align: center;
+    .copy-link {
+      margin: 30px auto;
+    }
+    .sochile-box {
+      ul {
+        justify-content: center;
+      }
+    }
+  }
+}
